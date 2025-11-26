@@ -8,6 +8,6 @@ def test_home():
 
 def test_greet():
     client = app.test_client()
-    res = client.get("/hello/Pratham")
+    res = client.get("/hello/Ricky")
     assert res.status_code == 200
     assert res.json["greeting"] == "Hello, Ricky!"
